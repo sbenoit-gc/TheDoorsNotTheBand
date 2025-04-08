@@ -27,3 +27,6 @@ Same as above but the status of the player object's HasKey? boolean is checked. 
 
 ### NOTE:<br>
 This example does NOT use blueprint interface (BPI) methodology which would be a better implementation of object interactions. We will discuss BPI in a future lesson.
+
+## Attributions: 
+Door sound, OpenGameArt ; < https://opengameart.org/content/202-more-sound-effects >
