@@ -25,4 +25,5 @@ Similar t0 above but main collision box is used to enable input when player is n
 ### BP_DoorInteractToOpenWithKey<br>
 Same s above but the status of he player object's HasKey boolean is checked. If true, the player is allowed to interact with door.
 
-
+### NOTE:<br>
+This example does NOT use blueprint interface (BPI) methodology which would be a better implementation of object interactions. We will discuss BPI in a future lesson.
