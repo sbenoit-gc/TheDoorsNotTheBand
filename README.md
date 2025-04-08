@@ -20,10 +20,10 @@ Uses 2 static meshes and a large collision box around door to implement automati
 Same as above but uses a TimeLine node and LERP to gradually swing door open close s layer approaches.
 
 ### BP_DoorInteractToOpen<br>
-Similar t0 above but main collision box is used to enable input when player is near. A new InputAction we added to system, IA_Interact. With player in collision box, the input is enabled and the player can pass the F key to interact with the door, ie open or close it. Optinally, door closes when player leaves box. Note the addition of a second collision box nested under the door mesh. This second collision box is sized similar to the door and has its collision setting set to BlackAll in order to prevent the layer from walking through the closed door.
+Similar to above but the main collision box is used to enable input when player is near, instead of opening door. We added new InputAction to the system, IA_Interact and bound the F key to it. With player in the collision box, input is enabled and the player can pass the F key to interact with the door, ie open or close it. Optionally, the door closes when player leaves the collision box. Note the addition of a second collision box nested under the door mesh. This second collision box is sized similar to the door and has its collision setting set to BlockAll in order to prevent the layer from walking through the closed door.
 
 ### BP_DoorInteractToOpenWithKey<br>
-Same s above but the status of he player object's HasKey boolean is checked. If true, the player is allowed to interact with door.
+Same as above but the status of the player object's HasKey? boolean is checked. If it's true, the player is allowed to interact with door by pressing F to open/close door.
 
 ### NOTE:<br>
 This example does NOT use blueprint interface (BPI) methodology which would be a better implementation of object interactions. We will discuss BPI in a future lesson.
